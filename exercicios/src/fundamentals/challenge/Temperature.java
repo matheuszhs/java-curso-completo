@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.challenge;
 
 import static java.lang.System.in;
 import static java.lang.System.out;
