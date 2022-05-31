@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.operators;
 
 import static java.lang.System.out;
 
