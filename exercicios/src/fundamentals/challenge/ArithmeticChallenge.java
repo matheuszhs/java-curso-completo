@@ -1,17 +1,21 @@
 package fundamentals.challenge;
 
-import static java.lang.System.out;
 import static java.lang.Math.pow;
+import static java.lang.System.Logger.Level.DEBUG;
+import static java.lang.System.Logger.Level.INFO;
+
+import java.lang.System.Logger;
 
 public class ArithmeticChallenge {
 
+    private static final Logger LOGGER = System.getLogger("f.c.ArithmeticChallenge");
     public static void main(String[] args) {
         int a = 3 * 4 - 10;
         int b = (int) pow(a, 3);
         double c = pow(a, 3);
 
-        out.println(b);
-        out.println(c);
+        LOGGER.log(DEBUG, b);
+        LOGGER.log(DEBUG, c);
 
         // My solution
 
@@ -26,7 +30,7 @@ public class ArithmeticChallenge {
 
         double total = totalXY / div;
 
-        out.println(total);
+        LOGGER.log(INFO, String.format("Total = %.0f", total));
 
         // Class solution
         double numA = pow(6 * (3 + 2), 2);
@@ -43,6 +47,6 @@ public class ArithmeticChallenge {
 
         double resultado = superior / inferior;
 
-        out.printf("O resultado = %.0f", resultado);
+        LOGGER.log(INFO,String.format("O resultado = %.0f", resultado));
     }
 }
