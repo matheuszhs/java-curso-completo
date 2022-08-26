@@ -14,9 +14,9 @@ public class FahrenheitCelsiusConverter {
         // C = (F - 32) * 5 / 9
         BigDecimal cValue = fValue.subtract(new BigDecimal(32))
                 .multiply(new BigDecimal(5))
-                .divide(new BigDecimal(9), 0, RoundingMode.HALF_UP);
+                .divide(new BigDecimal(9), 2, RoundingMode.HALF_UP);
 
-        System.out.printf("%.0f°F is equals %.0f°C", fValue, cValue);
+        System.out.printf("%.2f°F is equals %.2f°C", fValue, cValue);
 
         sc.close();
     }
